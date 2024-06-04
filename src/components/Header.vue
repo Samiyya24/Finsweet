@@ -4,9 +4,11 @@ import Navbar from "./Navbar.vue";
 <template>
   <div class="bg-[#1C1E53]">
     <Navbar />
-    <div class="container text-white flex py-32 gap-x-16 justify-between">
-      <div>
-        <h1 class="text-[54px] mb-6 max-w-lg font-semibold">
+    <div
+      class="container text-white md:flex max-md:text-center md:py-32 py-10 gap-x-16 justify-between"
+    >
+      <div class="max-md:mb-10">
+        <h1 class="md:text-[54px] max-md:text-3xl mb-6 max-w-lg font-semibold">
           Building stellar websites for early startups
         </h1>
         <p class="font-medium text-[#BBBBCB] mb-12 max-w-lg">
@@ -15,7 +17,7 @@ import Navbar from "./Navbar.vue";
         </p>
         <div class="flex gap-x-10 items-center">
           <router-link
-            class="hover:bg-[#FCD980] border border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] py-4 px-14 rounded-full cursor-pointer"
+            class="hover:bg-[#FCD980] border border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] md:py-4 py-2 md:px-14 px-5 rounded-full cursor-pointer"
             to="/works"
           >
             View our work</router-link
@@ -25,6 +27,7 @@ import Navbar from "./Navbar.vue";
             to="/pricing"
             >View Pricing
             <svg
+              class="animate-pulse"
               xmlns="http://www.w3.org/2000/svg"
               width="1.5em"
               height="1.5em"

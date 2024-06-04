@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-  <div class="grid grid-cols-3 gap-5">
+  <div class="md:grid grid-cols-3 gap-5">
     <div class="col-span-2 row-span-2 relative overflow-hidden group">
       <img class="w-full h-full" src="/img/Card.png" alt="" />
       <div
@@ -17,7 +17,7 @@
               aliquam
             </p>
             <router-link
-              class="flex items-center gap-x-4 cursor-pointer text-[]"
+              class="flex items-center gap-x-4 cursor-pointer text-[#FCD980]"
               to="/pricing"
               >View Pricing
               <svg
@@ -39,49 +39,63 @@
     <div class="relative overflow-hidden group">
       <img class="w-full h-full" src="/img/img6.png" alt="" />
       <div
-        class="absolute bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 group-hover:w-full w-1/2 -left-full h-full text-white group-hover:left-0 duration-1000"
+        class="absolute px-14 bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 group-hover:w-full w-1/2 -left-full h-full text-white group-hover:left-0 duration-1000"
       >
-        <h3 class="text-2xl font-semibold mb-4">Unisaas Website Design</h3>
-        <router-link
-          class="flex items-center gap-x-4 cursor-pointer text-[]"
-          to="/pricing"
-          >View Pricing
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="currentColor"
-              d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"
-            />
-          </svg>
-        </router-link>
+        <div class="flex flex-col">
+          <div class="w-60 h-32"></div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4 max-w-48">
+              Unisaas Website Design
+            </h3>
+            <router-link
+              class="flex items-center gap-x-4 cursor-pointer text-[#FCD980]"
+              to="/pricing"
+              >View Pricing
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"
+                />
+              </svg>
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
     <div class="relative overflow-hidden group">
       <img class="w-full h-full" src="/img/card3.png" alt="" />
       <div
-        class="absolute bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 group-hover:w-full w-1/2 -left-full h-full text-white group-hover:left-0 duration-1000"
+        class="absolute px-14 bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 group-hover:w-full w-1/2 -left-full h-full text-white group-hover:left-0 duration-1000"
       >
-        <h3 class="text-2xl font-semibold mb-4">Unisaas Website Design</h3>
-        <router-link
-          class="flex items-center gap-x-4 cursor-pointer text-[]"
-          to="/pricing"
-          >View Pricing
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1.5em"
-            height="1.5em"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="currentColor"
-              d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"
-            />
-          </svg>
-        </router-link>
+        <div class="flex flex-col">
+          <div class="w-60 h-40"></div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-4 max-w-48">
+              Unisaas Website Design
+            </h3>
+            <router-link
+              class="flex items-center gap-x-4 cursor-pointer text-[#FCD980]"
+              to="/pricing"
+              >View Pricing
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.5em"
+                height="1.5em"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"
+                />
+              </svg>
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>

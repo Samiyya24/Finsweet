@@ -3,13 +3,16 @@ import Projects from "./Projects.vue";
 </script>
 <template>
   <div class="container py-14">
-    <div class="flex justify-between py-14">
-      <h2 class="text-5xl font-semibold text-[#282938]">View our projects</h2>
+    <div class="md:flex justify-between py-14">
+      <h2 class="md:text-5xl text-3xl max-md:mb-5 font-semibold text-[#282938]">
+        View our projects
+      </h2>
       <router-link
         class="flex items-center gap-x-4 text-[#282938] font-medium cursor-pointer"
         to="/pricing"
         >View More
         <svg
+          class="animate-pulse"
           xmlns="http://www.w3.org/2000/svg"
           width="1.5em"
           height="1.5em"
