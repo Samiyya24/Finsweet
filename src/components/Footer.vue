@@ -10,17 +10,25 @@
             presence.</span
           >
         </div>
-        <div >
+        <div>
           <h2 class="text-5xl font-semibold mb-4">Lets Talk!</h2>
           <p class="text-[#F4F6FC]/80 max-w-[360px] mb-7">
             We are always open to discuss your project, improve your online
             presence and help with your UX/UI design challenges.
           </p>
           <div class="flex gap-5 max-md:mb-5">
-            <img src="/icons/facebook.svg" alt="" />
-            <img src="/icons/instagram.svg" alt="" />
-            <img src="/icons/linkedin.svg" alt="" />
-            <img src="/icons/twitter.svg" alt="" />
+            <a href="https://www.facebook.com/"
+              ><img src="/icons/facebook.svg" alt=""
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="/icons/instagram.svg" alt=""
+            /></a>
+            <a href="https://www.linkedin.com/"
+              ><img src="/icons/linkedin.svg" alt=""
+            /></a>
+            <a href="https://x.com/?lang=en"
+              ><img src="/icons/twitter.svg" alt=""
+            /></a>
           </div>
         </div>
       </div>
