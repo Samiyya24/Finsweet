@@ -14,13 +14,16 @@ import Navbar from "./Navbar.vue";
           eiusmod tempor incididunt.
         </p>
         <div class="flex gap-x-10 items-center">
-          <button
-            class="hover:bg-[#FCD980] border border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] py-4 px-14 rounded-full"
+          <router-link
+            class="hover:bg-[#FCD980] border border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] py-4 px-14 rounded-full cursor-pointer"
+            to="/works"
           >
-            View our work
-          </button>
-          <button class="flex items-center gap-x-4">
-            View Pricing
+            View our work</router-link
+          >
+          <router-link
+            class="flex items-center gap-x-4 cursor-pointer"
+            to="/pricing"
+            >View Pricing
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1.5em"
@@ -32,7 +35,7 @@ import Navbar from "./Navbar.vue";
                 d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"
               />
             </svg>
-          </button>
+          </router-link>
         </div>
       </div>
       <img src="/img/intro.png" alt="" />

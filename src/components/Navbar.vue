@@ -6,36 +6,36 @@
       <nav class="flex items-center gap-x-10">
         <div class="flex gap-x-10">
           <router-link
-            class="font-medium text-[#BBBBCB] hover:text-white"
+            class="font-medium text-[#BBBBCB] hover:text-white cursor-pointer"
             to="/Home"
             >Home</router-link
           >
           <router-link
-            class="font-medium text-[#BBBBCB] hover:text-white"
+            class="font-medium text-[#BBBBCB] hover:text-white cursor-pointer"
             to="/About us"
             >About us</router-link
           >
           <router-link
-            class="font-medium text-[#BBBBCB] hover:text-white"
+            class="font-medium text-[#BBBBCB] hover:text-white cursor-pointer"
             to="/Pricing"
             >Pricing</router-link
           >
           <router-link
-            class="font-medium text-[#BBBBCB] hover:text-white"
+            class="font-medium text-[#BBBBCB] hover:text-white cursor-pointer"
             to="/Work"
             >Work</router-link
           >
           <router-link
-            class="font-medium text-[#BBBBCB] hover:text-white"
+            class="font-medium text-[#BBBBCB] hover:text-white cursor-pointer"
             to="/Blog"
             >Blog</router-link
           >
         </div>
-        <button
-          class="border-white/20 hover:border-white border-2 py-4 px-12 rounded-full"
+        <router-link
+          class="border-white/20 hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer" to="/contact"
         >
           Contact us
-        </button>
+        </router-link>
       </nav>
     </div>
   </header>
