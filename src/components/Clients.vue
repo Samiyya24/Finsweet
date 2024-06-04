@@ -10,7 +10,7 @@
     class="mySwiper"
   >
     <swiper-slide>
-      <section class="md:flex px-5 justify-around py-32">
+      <section class="max-md:text-center md:flex px-5 justify-around py-32">
         <div class="max-w-[300px]">
           <h3 class="text-4xl font-semibold text-primary">
             What our clients say about us
@@ -26,7 +26,7 @@
             "The best agency we’ve worked with so far. They understand our
             product and are able to add new features with a great focus."
           </p>
-          <div class="flex items-center gap-x-4">
+          <div class="flex items-center gap-x-4 max-md:justify-center">
             <img src="/img/jenny.png" alt="Jenny" />
             <div class="text-primary">
               <p class="text-lg">Jenny Wilson</p>
@@ -37,7 +37,7 @@
       </section>
     </swiper-slide>
     <swiper-slide>
-      <section class="md:flex px-5 justify-around py-32">
+      <section class="max-md:text-center md:flex px-5 justify-around py-32">
         <div class="max-w-[300px]">
           <h3 class="text-4xl font-semibold text-primary">
             What our clients say about us
@@ -53,7 +53,7 @@
             "The best agency we’ve worked with so far. They understand our
             product and are able to add new features with a great focus."
           </p>
-          <div class="flex items-center gap-x-4">
+          <div class="flex items-center gap-x-4 max-md:justify-center">
             <img src="/img/jenny.png" alt="Jenny" />
             <div class="text-primary">
               <p class="text-lg">Jenny Wilson</p>
@@ -64,7 +64,7 @@
       </section>
     </swiper-slide>
     <swiper-slide>
-      <section class="md:flex px-5 justify-around py-32">
+      <section class="max-md:text-center md:flex px-5 justify-around py-32">
         <div class="max-w-[300px]">
           <h3 class="text-4xl font-semibold text-primary">
             What our clients say about us
@@ -80,7 +80,7 @@
             "The best agency we’ve worked with so far. They understand our
             product and are able to add new features with a great focus."
           </p>
-          <div class="flex items-center gap-x-4">
+          <div class="flex items-center gap-x-4 max-md:justify-center">
             <img src="/img/jenny.png" alt="Jenny" />
             <div class="text-primary">
               <p class="text-lg">Jenny Wilson</p>
