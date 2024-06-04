@@ -1,6 +1,8 @@
-<script setup></script>
+<script setup>
+import Projects from "./Projects.vue";
+</script>
 <template>
-  <div class="container">
+  <div class="container py-14">
     <div class="flex justify-between py-14">
       <h2 class="text-5xl font-semibold text-[#282938]">View our projects</h2>
       <router-link
@@ -20,6 +22,7 @@
         </svg>
       </router-link>
     </div>
+    <Projects />
   </div>
 </template>
 
