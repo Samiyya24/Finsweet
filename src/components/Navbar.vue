@@ -1,7 +1,9 @@
 <script setup></script>
 <template>
-  <header>
-    <div class="container text-white flex items-center justify-between py-10">
+  <header class="fixed max-w-full bg-[#1C1E53] z-10 container">
+    <div
+      class="container text-white flex items-center justify-between md:py-10 py-5"
+    >
       <img src="/img/Logo.svg" alt="" />
       <nav class="flex items-center gap-x-10">
         <div class="max-md:hidden flex gap-x-10">

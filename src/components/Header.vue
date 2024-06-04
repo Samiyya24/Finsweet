@@ -5,7 +5,7 @@ import Navbar from "./Navbar.vue";
   <div class="bg-[#1C1E53]">
     <Navbar />
     <div
-      class="container text-white md:flex max-md:text-center md:py-32 py-10 gap-x-16 justify-between"
+      class="container pt-24 text-white md:flex max-md:text-center md:py-32 py-10 gap-x-16 justify-between"
     >
       <div class="max-md:mb-10">
         <h1 class="md:text-[54px] max-md:text-3xl mb-6 max-w-lg font-semibold">
