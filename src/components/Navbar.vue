@@ -65,7 +65,7 @@ const hamburger = () => {
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
-          class="hidden md:block anime font-medium text-[16px] text-white"
+          class="hidden md:block anime cursor-pointer font-medium text-[16px] text-white"
           v-for="(item, index) in menu"
           :key="index"
           href="#"
