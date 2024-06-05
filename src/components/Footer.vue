@@ -32,7 +32,9 @@
           </div>
         </div>
       </div>
-      <div class="md:flex bg-[#FCD980] md:w-1/3 py-7 text-primary gap-7 px-9">
+      <div
+        class="md:flex bg-[#FCD980] md:w-1/3 md:py-7 py-2 text-primary gap-7 md:px-9 px-2"
+      >
         <div class="flex flex-col">
           <span class="text-lg font-medium">Email me at</span>
           <router-link to="/">contact@website.com</router-link>

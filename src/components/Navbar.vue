@@ -44,13 +44,11 @@ const hamburger = () => {
   }
 
   if (hambur.style.right == "-100%") {
-    // hambur.style.display = "flex";
     hambur.style.right = "0px";
     hamburger.style.display = "none";
     left.style.display = "block";
   } else {
     hambur.style.right = "-100%";
-    // hambur.style.display = "none";
     hamburger.style.display = "block";
     left.style.display = "none";
   }
@@ -90,28 +88,13 @@ const hamburger = () => {
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
               height="1em"
-              viewBox="0 0 48 48"
+              viewBox="0 0 24 24"
             >
-              <defs>
-                <mask id="ipSLeftC0">
-                  <g fill="none" stroke-linejoin="round" stroke-width="4">
-                    <path
-                      fill="#fff"
-                      stroke="#fff"
-                      d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
-                    />
-                    <path
-                      stroke="#000"
-                      stroke-linecap="round"
-                      d="m27 33l-9-9l9-9"
-                    />
-                  </g>
-                </mask>
-              </defs>
               <path
                 fill="currentColor"
-                d="M0 0h48v48H0z"
-                mask="url(#ipSLeftC0)"
+                fill-rule="evenodd"
+                d="M3.5 5a1 1 0 0 0 0 2h17a1 1 0 1 0 0-2zm-1 7a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1m0 6.001a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1"
+                clip-rule="evenodd"
               />
             </svg>
           </button>
@@ -124,12 +107,17 @@ const hamburger = () => {
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
               height="1em"
-              viewBox="0 0 1024 1024"
+              viewBox="0 0 24 24"
             >
-              <path
-                fill="currentColor"
-                d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64m154.7 454.5l-246 178c-5.3 3.8-12.7 0-12.7-6.5v-46.9c0-10.2 4.9-19.9 13.2-25.9L566.6 512L421.2 406.8c-8.3-6-13.2-15.6-13.2-25.9V334c0-6.5 7.4-10.3 12.7-6.5l246 178c4.4 3.2 4.4 9.8 0 13"
-              />
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="m12 14.122l5.303 5.303a1.5 1.5 0 0 0 2.122-2.122L14.12 12l5.304-5.303a1.5 1.5 0 1 0-2.122-2.121L12 9.879L6.697 4.576a1.5 1.5 0 1 0-2.122 2.12L9.88 12l-5.304 5.304a1.5 1.5 0 1 0 2.122 2.12z"
+                />
+              </g>
             </svg>
           </button>
         </div>
