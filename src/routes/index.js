@@ -15,11 +15,11 @@ const routes = [
                 name: 'about',
                 component: () => import('../pages/About.vue')
             },
-            // {
-            //     path: 'pricing',
-            //     name: 'pricing',
-            //     component: () => import('../pages/Pricing.vue')
-            // },
+            {
+                path: 'pricing',
+                name: 'pricing',
+                component: () => import('../pages/Pricing.vue')
+            },
             // {
             //     path: 'work',
             //     name: 'work',

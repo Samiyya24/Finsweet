@@ -1,6 +1,8 @@
 <script setup></script>
 <template>
-  <div class="md:flex pb-32 md:pt-64 pt-24 container items-center gap-40">
+  <div
+    class="md:flex md:pb-32 pb-10 md:pt-64 pt-24 container items-center gap-40"
+  >
     <div class="text-primary max-md:text-center">
       <span class="text-lg mb-2">About us</span>
       <h1 class="md:text-6xl text-4xl font-semibold mb-8 md:leading-[74px]">
