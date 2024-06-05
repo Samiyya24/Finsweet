@@ -48,7 +48,7 @@ const datas = reactive([
 </script>
 
 <template>
-  <div class="py-72 container">
+  <div class="md:py- pt-40 pb-20 container">
     <div class="text-center">
       <h1 class="text-5xl font-semibold text-primary mb-4">
         Our Pricing Plans
@@ -90,20 +90,15 @@ const datas = reactive([
           {{ data.info }}
         </p>
 
-        <div class="mb-24">
-          <div
-            v-for="(item, index) in data.companyBenefits"
-            :key="index"
-            class="mb-5"
-          >
+        <div class="mb-16">
+          <div v-for="item in data.companyBenefits" :key="index" class="mb-5">
             <div class="flex gap-3 items">
+              <!-- <span><img :src="index==1 ? '/icons/green.svg': '/icons/pink.svg'" alt="'right icon'" /></span> -->
               <span
-                ><img
-                  :class="index === 1 ? 'mix-blend-luminosity' : ''"
-                  :src="index > 2 ? '/icons/pink.svg' : '/icons/green.svg'"
+                ><img :src="index > 2 ? '/icons/pink.svg' : '/icons/green.svg'"
               /></span>
               <span
-                :class="item.index === 1 ? 'text-gray-100' : ''"
+                :class="index === 1 ? 'text-white' : ''"
                 class="mb-5 text-primary"
                 >{{ item }}</span
               >
