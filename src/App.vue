@@ -1,17 +1,9 @@
 <script setup>
-import Header from "./components/Header.vue";
-import OurProject from "./components/OurProject.vue";
-import Features from "./components/Features.vue";
-import Clients from "./components/Clients.vue";
-import Footer from "./components/Footer.vue";
+import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <Header />
-  <OurProject />
-  <Features />
-  <div class="container"><Clients /></div>
-  <Footer/>
+  <div><RouterView /></div>
 </template>
 
 <style scoped></style>
