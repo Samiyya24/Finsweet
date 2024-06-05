@@ -82,7 +82,7 @@ const hamburger = () => {
           <button
             id="hamburger"
             @click="hamburger()"
-            class="flex justify-center items-center text-5xl text-white mb-2 px-4"
+            class="flex justify-center items-center text-3xl text-white mb-2 px-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +101,7 @@ const hamburger = () => {
           <button
             id="left"
             @click="hamburger()"
-            class="hidden duration-150 justify-center items-center text-5xl text-white mb-2 px-4"
+            class="hidden duration-150 justify-center items-center text-3xl text-white mb-2 px-4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
