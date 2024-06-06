@@ -1,120 +1,150 @@
-<script setup>
-import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
-import { reactive } from "vue";
-
-const datas = reactive([
-  {
-    price: "$299",
-    design: "Per Design",
-    page: "Landing Page ",
-    info: "When you’re ready to go beyond prototyping in Figma, ",
-    companyBenefits: [
-      "All limited links",
-      "Own analytics platform",
-      "Chat support",
-      "Optimize hashtags",
-      "Unlimited users",
-    ],
-  },
-  {
-    price: "$399",
-    design: "Multi Design",
-    page: "Website Page ",
-    info: "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
-    companyBenefits: [
-      "All limited links",
-      "Own analytics platform",
-      "Chat support",
-      "Optimize hashtags",
-      "Unlimited users",
-    ],
-  },
-  {
-    price: "$499",
-    design: "Per Design",
-    page: "Complex Project",
-    info: "When you’re ready to go beyond prototyping in Figma, ",
-    companyBenefits: [
-      "All limited links",
-      "Own analytics platform",
-      "Chat support",
-      "Optimize hashtags",
-      "Unlimited users",
-      "Assist and Help",
-    ],
-  },
-]);
-</script>
-
 <template>
-  <div class="md:py- pt-40 pb-20 container">
-    <div class="text-center">
-      <h1 class="text-5xl font-semibold text-primary mb-4">
-        Our Pricing Plans
-      </h1>
-      <p class="font-medium text-primary/70 mb-16 max-w-[500px] mx-auto">
-        When you’re ready to go beyond prototyping in Figma, Webflow is ready to
-        help you bring your designs to life — without coding them.
-      </p>
-    </div>
-    <div class="grid md:grid-cols-3 gap-9">
-      <div
-        v-for="(data, index) in datas"
-        :key="index"
-        class="bg-[#F4F6FC] py-16 px-12 rounded-xl"
-        :class="index === 1 ? 'bg-[#1c1e5d] text-white' : 'bg-[#F4F6FC]'"
-      >
-        <div class="flex gap-2 items-center mb-5">
-          <span
-            :class="index === 1 ? 'text-white' : ''"
-            class="text-primary text-4xl font-semibold"
-            >{{ data.price }}</span
-          >
-          <span
-            :class="index === 1 ? 'text-[#eec356]' : ''"
-            class="text-[#2405F2]"
-            >{{ data.design }}</span
-          >
-        </div>
-        <h4
-          :class="index === 1 ? 'text-white' : ''"
-          class="text-2xl text-primary mb-2"
-        >
-          {{ data.page }}
-        </h4>
-        <p
-          :class="index === 1 ? 'text-[#b2b2b2]' : ''"
-          class="text-primary/70 mb-[78px]"
-        >
-          {{ data.info }}
+  <div class="container mx-auto">
+    <div class="md:pt-52 pt-32 pb-10">
+      <div>
+        <h1 class="font-bold text-4xl text-center mb-4">Our Pricing Plans</h1>
+        <p class="text-sm max-w-[450px] text-center mx-auto text-primary/70">
+          When you’re ready to go beyond prototyping in Figma, Webflow is ready
+          to help you bring your designs to life — without coding them.
         </p>
+      </div>
 
-        <div class="mb-16">
-          <div v-for="item in data.companyBenefits" :key="index" class="mb-5">
-            <div class="flex gap-3 items">
-              <!-- <span><img :src="index==1 ? '/icons/green.svg': '/icons/pink.svg'" alt="'right icon'" /></span> -->
-              <span
-                ><img :src="index > 2 ? '/icons/pink.svg' : '/icons/green.svg'"
-              /></span>
-              <span
-                :class="index === 1 ? 'text-white' : ''"
-                class="mb-5 text-primary"
-                >{{ item }}</span
+      <div class="grid grid-cols-1 md:grid-cols-3 justify-center">
+        <div
+          v-for="(plan, index) in plans"
+          :key="index"
+          class="rounded-lg px-8 mx-2 my-12 hover:shadow-xl"
+          :class="plan.bgClass"
+          @mouseover="hover = index"
+          @mouseleave="hover = -1"
+        >
+          <div class="flex gap-8 px-6 py-8 items-center">
+            <h1 class="font-bold text-4xl" :class="plan.textColor">
+              {{ plan.price }}
+            </h1>
+            <p :class="plan.subTextColor">{{ plan.designType }}</p>
+          </div>
+          <div class="px-7 gap-8">
+            <h1 class="font-semibold text-2xl" :class="plan.textColor">
+              {{ plan.title }}
+            </h1>
+            <p
+              :class="[
+                plan.textColor,
+                'text-sm max-w-[300px] my-4 text-primary/70',
+              ]"
+            >
+              {{ plan.description }}
+            </p>
+            <div class="gap-4">
+              <div
+                v-for="(feature, featureIndex) in plan.features"
+                :key="featureIndex"
+                class="flex gap-4 py-3"
               >
+                <img
+                  :src="feature.icon"
+                  alt="feature icon"
+                  :class="featureIndex >= 3 ? plan.blend : ''"
+                />
+                <p :class="plan.textColor">{{ feature.text }}</p>
+              </div>
+            </div>
+            <div class="justify-center mx-auto my-12">
+              <router-link
+                v-if="plan.buttonText === 'Get started'"
+                :to="plan.buttonLink"
+                class="[&.router-link-active]:text-white border rounded-full px-8 py-4"
+                :class="plan.buttonClass"
+              >
+                {{ plan.buttonText }}
+              </router-link>
+              <router-link
+                v-else
+                :to="plan.buttonLink"
+                class="[&.router-link-active]:text-white hover:text-gray-400 border rounded-full py-3 px-8"
+                :class="plan.buttonClass"
+              >
+                {{ plan.buttonText }}
+              </router-link>
             </div>
           </div>
         </div>
-        <router-link
-          class=""
-          :class="
-            index === 1
-              ? 'hover:bg-[#ffdc84] hover:text-primary border border-[#ffdc84] text-[#ffdc84] py-4 px-20 rounded-full'
-              : 'py-4 px-20 hover:bg-primary hover:text-[#F4F6FC] border border-primary rounded-full'
-          "
-          >Get started</router-link
-        >
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const plans = [
+  {
+    price: "$299",
+    designType: "Per Design",
+    title: "Landing Page",
+    description: "When you’re ready to go beyond prototyping in Figma,",
+    features: [
+      { icon: "/icons/green.svg", text: "All limited links" },
+      { icon: "/icons/green.svg", text: "Own analytics platform" },
+      { icon: "/icons/green.svg", text: "Chat support" },
+      { icon: "/icons/pink.svg", text: "Optimize hashtags" },
+      { icon: "/icons/pink.svg", text: "Unlimited users" },
+    ],
+    buttonText: "Get started",
+    buttonLink: "/Home",
+    bgClass: "bg-[#F4F6FC]",
+    blend: "mix-blend-luminosity	",
+    textColor: "text-primary",
+    subTextColor: "text-[#2405F2]",
+    buttonClass:
+      "bg-white text-primary border border-primary hover:bg-primary hover:text-white ",
+  },
+  {
+    price: "$399",
+    designType: "Multi Design",
+    title: "Website Page",
+    description:
+      "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
+    features: [
+      { icon: "/icons/green.svg", text: "All limited links" },
+      { icon: "/icons/green.svg", text: "Own analytics platform" },
+      { icon: "/icons/green.svg", text: "Chat support" },
+      { icon: "/icons/green.svg", text: "Optimize hashtags" },
+      { icon: "/icons/green.svg", text: "Unlimited users" },
+    ],
+    buttonText: "Get started",
+    buttonLink: "/Home",
+    bgClass: "bg-[#1C1E53]",
+    textColor: "text-white",
+    blend: "mix-blend-normal",
+    subTextColor: "text-[#FCD980]",
+    buttonClass:
+      " text-[#FCD980] border border-[#FCD980] hover:bg-[#FCD980] hover:text-primary ",
+  },
+  {
+    price: "$499 +",
+    designType: "Per Design",
+    title: "Complex Project",
+    description: "When you’re ready to go beyond prototyping in Figma,",
+    features: [
+      { icon: "/icons/green.svg", text: "All limited links" },
+      { icon: "/icons/green.svg", text: "Own analytics platform" },
+      { icon: "/icons/green.svg", text: "Chat support" },
+      { icon: "/icons/green.svg", text: "Optimize hashtags" },
+      { icon: "/icons/green.svg", text: "Unlimited users" },
+      { icon: "/icons/green.svg", text: "Assist and Help" },
+    ],
+    buttonText: "Contact us",
+    buttonLink: "/Contact",
+    bgClass: "bg-[#F4F6FC]",
+    blend: "mix-blend-normal",
+    textColor: "text-primary",
+    subTextColor: "text-[#2405F2]",
+    buttonClass:
+      "bg-white text-primary border border-primary hover:bg-primary hover:text-white ",
+  },
+];
+
+let hover = -1;
+</script>
+
+<style scoped></style>

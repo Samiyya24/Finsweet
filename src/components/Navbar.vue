@@ -13,7 +13,7 @@ const menu_hambur = ref([
 
 const link = (index) => {
   if (index === 0) {
-    return "/";
+    return "/home";
   } else if (index === 1) {
     return "/about";
   } else if (index === 2) {
@@ -150,14 +150,14 @@ const hamburger = () => {
 <style scoped>
 .blurred-background {
   background: rgba(28, 30, 83, 0.5);
-  backdrop-filter: blur(15px); /* Adjust the blur value as needed */
+  backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 }
 
 @media (max-width: 768px) {
   .blurred-background {
     background: rgba(28, 30, 83, 0.8);
-    backdrop-filter: blur(30px); /* Adjust the blur value as needed */
+    backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
   }
 }

@@ -3,7 +3,6 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
     {
         path: '/',
-        redirect: '/home',
         children: [
             {
                 path: 'home',
@@ -20,22 +19,28 @@ const routes = [
                 name: 'pricing',
                 component: () => import('../pages/Pricing.vue')
             },
-            // {
-            //     path: 'work',
-            //     name: 'work',
-            //     component: () => import('../pages/Work.vue')
-            // },
-            //     {
-            //         path: 'blog',
-            //         name: 'blog',
-            //         component: () => import('../pages/Blog.vue')
-            //     }, 
+            {
+                path: 'work',
+                name: 'work',
+                component: () => import('../pages/Work.vue')
+            },
+
+            {
+                path: 'blog',
+                name: 'blog',
+                component: () => import('../pages/Blog.vue')
+            },
             //     {
             //        path: 'contact-us',
             //        name: 'contact-us',
             //        component: () => import('../pages/Contact.vue')
             //    }
         ]
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'note-found',
+        component: () => import('../pages/NotFound.vue')
     },
 ];
 

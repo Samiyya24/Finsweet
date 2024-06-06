@@ -3,17 +3,19 @@
     <div
       v-for="(data, index) in datas"
       :key="index"
-      class="relative mb-10 py-4 border-b-2 cursor-pointer"
+      class="relative md:mb-10 mb-5 md:py-4 py-2 border-b-2 cursor-pointer"
       @click="toggleInfo(index)"
     >
-      <div class="flex md:gap-16 gap-7 mb-5">
-        <span class="text-2xl text-[#2405F2]">0{{ index + 1 }}</span>
-        <h3 class="md:text-2xl text-xl max-md:w-[200px]">
+      <div class="flex md:gap-16 gap-5 mb-5">
+        <span class="md:text-2xl text-base text-[#2405F2]"
+          >0{{ index + 1 }}</span
+        >
+        <h3 class="md:text-2xl text-base max-md:w-[200px]">
           {{ data.question }}
         </h3>
         <span
           v-if="!data.isVisible"
-          class="absolute right-10 text-2xl text-[#2405F2]"
+          class="absolute md:right-10 right-3 md:text-2xl text-base text-[#2405F2]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +31,7 @@
         </span>
         <span
           v-if="data.isVisible"
-          class="absolute right-10 text-2xl text-[#2405F2]"
+          class="absolute md:right-10 right-3 md:text-2xl text-base text-[#2405F2]"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,12 +51,16 @@
           </svg>
         </span>
       </div>
-      <p
-        v-show="data.isVisible"
-        class="duration-1000 text-lg leading-8 text-primary/80 md:pl-[90px] pl-14 max-w-[650px]"
+      <div
+        :class="data.isVisible ? 'max-h-[100px]' : 'max-h-0'"
+        class="overflow-hidden duration-300 ease-linear"
       >
-        {{ data.answer }}
-      </p>
+        <p
+          class="md:text-lg text-sm md:leading-8 text-primary/80 md:pl-[90px] px-10 max-w-[650px]"
+        >
+          {{ data.answer }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -100,6 +106,4 @@ const toggleInfo = (index) => {
 };
 </script>
 
-<style lang="scss" scoped>
-/* Add any scoped styles you need here */
-</style>
+<style lang="scss" scoped></style>
