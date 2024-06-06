@@ -2,7 +2,7 @@
 import Projects from "./Projects.vue";
 </script>
 <template>
-  <div class="container py-14">
+  <div class="container md:py-14">
     <div class="md:flex justify-between py-14">
       <h2 class="md:text-5xl text-3xl max-md:mb-5 font-semibold text-[#282938]">
         View our projects

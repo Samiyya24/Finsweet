@@ -7,7 +7,7 @@
       <img class="w-full mb-10" src="/icons/NotFound.png" alt="Not" />
       <router-link
         class="border py-5 px-10 rounded-full hover:bg-white hover:text-primary text-white"
-        to="/home"
+        to="/"
         >Home</router-link
       >
     </div>

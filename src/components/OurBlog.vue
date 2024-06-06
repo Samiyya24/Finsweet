@@ -8,7 +8,7 @@
     <p class="text-primary/70 mb-6 leading-7 max-md:text-sm">{{ data.info }}</p>
     <button class="text-primary flex items-center gap-4">
       {{ data.button }}
-      <svg
+      <svg class="animate-pulse"
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
         height="1em"

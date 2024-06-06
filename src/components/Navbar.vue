@@ -13,7 +13,7 @@ const menu_hambur = ref([
 
 const link = (index) => {
   if (index === 0) {
-    return "/home";
+    return "/";
   } else if (index === 1) {
     return "/about";
   } else if (index === 2) {
@@ -65,7 +65,7 @@ const hamburger = () => {
       <div class="flex gap-10 items-center">
         <router-link
           :to="link(index)"
-          class="hidden md:block anime cursor-pointer font-medium text-[16px] text-white"
+          class="hidden md:block anime cursor-pointer font-medium text-[16px] "
           v-for="(item, index) in menu"
           :key="index"
           href="#"
@@ -133,7 +133,7 @@ const hamburger = () => {
 
   <div
     id="hambur"
-    class="w-[65%] flex -right-full duration-700 bg-[#1C1E53]/70 px-[10%] flex-col gap-6 py-[30%] h-screen items-start fixed z-30 shadow-2xl shadow-[#1C1E53]"
+    class="w-[65%] flex -right-full duration-700 bg-[#1C1E53]/80 px-[10%] flex-col gap-6 py-[30%] h-screen items-start fixed z-30 shadow-2xl shadow-[#1C1E53]"
   >
     <router-link
       @click="hamburger()"
@@ -198,94 +198,6 @@ const hamburger = () => {
 
 .phone:hover::after {
   width: 0;
-}
-
-.vibrate-button {
-  border: 2px solid rgba(244, 246, 252, 0.2);
-  transition: border-color 0.3s ease;
-  position: relative;
-}
-
-.vibrate-button:hover {
-  border-color: white;
-  animation: vibrate 0.3s linear infinite, rotate 0.3s linear infinite;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, -2px);
-  }
-  40% {
-    transform: translate(2px, -2px);
-  }
-  60% {
-    transform: translate(-2px, 2px);
-  }
-  80% {
-    transform: translate(2px, 2px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-.vibrate-rotate-button {
-  background: rgba(252, 217, 128, 1);
-  transition: background-color 0.3s ease;
-  position: relative;
-}
-
-.vibrate-rotate-button:hover {
-  background-color: rgba(252, 217, 128, 0.8); /* Adjust this color as needed */
-  animation: vibrate 0.3s linear infinite, rotate 0.3s linear infinite;
-}
-
-@keyframes vibrate {
-  0% {
-    transform: translate(0);
-  }
-  20% {
-    transform: translate(-2px, -2px);
-  }
-  40% {
-    transform: translate(2px, -2px);
-  }
-  60% {
-    transform: translate(-2px, 2px);
-  }
-  80% {
-    transform: translate(2px, 2px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(1deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
 }
 
 .anime {

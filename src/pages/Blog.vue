@@ -73,8 +73,8 @@ function setFilter(button) {
 <template>
   <Navbar />
   <Students />
-  <div class="container py-28 text-center">
-    <h3 class="text-5xl font-semibold mb-12">Our Blog</h3>
+  <div class="container md:py-28 py-10 text-center">
+    <h3 class="md:text-5xl text-2xl text-primary font-semibold mb-12">Our Blog</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div v-for="(item, index) in filteredData" :key="index">
         <OurBlog :data="item" />

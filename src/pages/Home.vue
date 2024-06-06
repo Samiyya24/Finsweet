@@ -10,7 +10,7 @@ import Footer from "../components/Footer.vue";
   <Header />
   <OurProject />
   <Features />
-  <div class="container"><Clients /></div>
+  <Clients />
   <Footer />
 </template>
 
