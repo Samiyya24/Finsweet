@@ -56,7 +56,7 @@
         class="overflow-hidden duration-300 ease-linear"
       >
         <p
-          class="md:text-lg text-sm md:leading-8 text-primary/80 md:pl-[90px] px-10 max-w-[650px]"
+          class="md:text-lg lg:text-left text-sm md:leading-8 text-primary/80 md:pl-[90px] px-10 max-w-[650px]"
         >
           {{ data.answer }}
         </p>
