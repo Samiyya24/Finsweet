@@ -30,7 +30,7 @@ import Footer from "../components/Footer.vue";
           <input
             type="text"
             id="name"
-            class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
+            class="bg-transparent focus:ring-gray-300 py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Enter your name"
             required
           />
@@ -44,7 +44,7 @@ import Footer from "../components/Footer.vue";
           <input
             type="text"
             id="email"
-            class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
+            class="bg-transparent focus:ring-gray-300 py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Enter your Email"
             required
           />
@@ -58,7 +58,7 @@ import Footer from "../components/Footer.vue";
           <input
             type="text"
             id="email"
-            class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
+            class="bg-transparent py-4 md:px-6 px-4 focus:ring-gray-300 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Provide context"
             required
           />
@@ -72,7 +72,7 @@ import Footer from "../components/Footer.vue";
           <input
             type="text"
             id="email"
-            class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
+            class="bg-transparent py-4 md:px-6 px-4 focus:ring-gray-300 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Provide context"
             required
           />
@@ -87,7 +87,7 @@ import Footer from "../components/Footer.vue";
         <textarea
           id="message"
           rows="4"
-          class="block w-full p-5 text-sm text-black placeholder:text-black bg-transparent rounded-lg border border-gray-300"
+          class="block w-full p-5 text-sm text-black focus:ring-gray-300 focus:border-none placeholder:text-black bg-transparent rounded-lg border border-gray-300"
           placeholder="Write your  question here"
         ></textarea>
       </div>
