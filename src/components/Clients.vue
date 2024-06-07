@@ -1,7 +1,9 @@
 <template>
   <div class="container lg:flex md:py-24 relative">
     <div class="lg:w-1/2">
-      <div class="gap-5 max-md:mx-12 my-12 md:flex md:flex-col md:items-center">
+      <div
+        class="gap-5 max-md:mx-12 my-12 md:flex md:flex-col lg:items md:items-center"
+      >
         <h1
           class="md:text-4xl text-xl ld:max-w-[300px] max-md:mx-auto font-semibold max-md:text-center max-md:max-w-[200px]"
         >

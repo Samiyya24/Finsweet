@@ -8,10 +8,10 @@ import Footer from "../components/Footer.vue";
 <template>
   <Navbar />
   <PlansCard />
-  <div class="container lg:flex items-start gap-32 md:text-center">
-    <div class="max-md:text-center max-md:mb-10 md:mb-10">
+  <div class="container lg:flex items-start gap-20 md:text-center">
+    <div class="max-md:text-center text-left max-md:mb-10 md:mb-10">
       <h3
-        class="md:text-5xl text-4xl font-semibold mb-4 leading-[64px] text-primary"
+        class="lg:text-5xl text-4xl font-semibold mb-4 leading-[94px] text-primary"
       >
         Frequently asked questions
       </h3>
