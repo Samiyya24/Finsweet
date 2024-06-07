@@ -15,7 +15,9 @@ import Footer from "../components/Footer.vue";
       >
         Frequently asked questions
       </h3>
-      <router-link class="text-[#2405F2]">Contact us For More Info</router-link>
+      <router-link class="text-[#2405F2] bg-red-500"
+        >Contact us For More Info</router-link
+      >
     </div>
     <Accardion />
   </div>
