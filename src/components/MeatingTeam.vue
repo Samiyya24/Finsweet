@@ -26,7 +26,7 @@ const data = reactive([
               alt=""
             />
             <div
-              class="absolute group-hover:flex hidden p-1 gap-3 bottom-5 md:right-12 right-[75px]"
+              class="absolute group-hover:flex hidden cursor-pointer p-1 gap-3 bottom-5 md:right-12 right-[75px]"
             >
               <img src="/icons/facebook.svg" alt="" />
               <img src="/icons/twitter.svg" alt="" />
