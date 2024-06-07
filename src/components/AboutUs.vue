@@ -3,7 +3,7 @@
   <div
     class="lg:flex md:text-center md:pb-32 pb-10 lg:pt-64 pt-24 container items-center gap-40"
   >
-    <div class="text-primary max-md:text-center">
+    <div class="text-primary max-md:text-center lg:text-left">
       <span class="text-lg mb-2">About us</span>
       <h1 class="md:text-6xl text-4xl font-semibold mb-8 md:leading-[74px]">
         Our designs solve problems

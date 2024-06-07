@@ -30,7 +30,7 @@ import Footer from "../components/Footer.vue";
           <input
             type="name"
             id="name"
-            class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
+            class="ring-0 outline-0 bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Enter your name"
             required
           />
