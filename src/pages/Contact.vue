@@ -16,7 +16,7 @@ import Footer from "../components/Footer.vue";
 
   <section class="container">
     <form
-      class="bg-[#F4F6FC] md:py-14 py-5 md:px-16 px-2 max-w-[1000px] rounded-xl mx-auto mb-32 shadow-[0px_0px_9px_0px_#bee3f8]"
+      class="bg-[#F4F6FC] md:py-14 py-5 md:px-16 px-2 max-w-[1000px] rounded-xl mx-auto mb-32"
       action=""
     >
       <div class="grid md:grid-cols-2 gap-8 mb-4">
@@ -24,13 +24,13 @@ import Footer from "../components/Footer.vue";
           <label
             for="name"
             id="name"
-            class="block mb-2 leading-8 md:text-lg text-gray-900"
+            class="block mb-2 ring-0 leading-8 md:text-lg text-gray-900"
             >Name</label
           >
           <input
-            type="name"
+            type="text"
             id="name"
-            class="ring-0 outline-0 bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
+            class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Enter your name"
             required
           />
@@ -42,10 +42,10 @@ import Footer from "../components/Footer.vue";
             >Email</label
           >
           <input
-            type="email"
+            type="text"
             id="email"
             class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
-            placeholder="Enter your Emial"
+            placeholder="Enter your Email"
             required
           />
         </div>
@@ -56,7 +56,7 @@ import Footer from "../components/Footer.vue";
             >Subject</label
           >
           <input
-            type="email"
+            type="text"
             id="email"
             class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Provide context"
@@ -70,7 +70,7 @@ import Footer from "../components/Footer.vue";
             >Subject</label
           >
           <input
-            type="email"
+            type="text"
             id="email"
             class="bg-transparent py-4 md:px-6 px-4 placeholder:text-black border border-gray-300 text-black text-sm rounded-lg block w-full"
             placeholder="Provide context"
@@ -103,8 +103,8 @@ import Footer from "../components/Footer.vue";
 </template>
 
 <style lang="scss" scoped>
-#name:focus {
+input:focus {
   outline: none;
-  border: 2px solid #0054fd;
+  border: none;
 }
 </style>

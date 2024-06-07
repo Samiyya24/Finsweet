@@ -28,10 +28,17 @@ const data = reactive([
             <div
               class="absolute group-hover:flex hidden cursor-pointer p-1 gap-3 bottom-5 md:right-12 right-[75px]"
             >
-              <img src="/icons/facebook.svg" alt="" />
-              <img src="/icons/twitter.svg" alt="" />
-              <img src="/icons/linkedin.svg" alt="" />
+              <a href="https://www.facebook.com/"
+                ><img src="/icons/facebook.svg" alt=""
+              /></a>
+              <a href="https://www.linkedin.com/"
+                ><img src="/icons/linkedin.svg" alt=""
+              /></a>
+              <a href="https://x.com/?lang=en"
+                ><img src="/icons/twitter.svg" alt=""
+              /></a>
             </div>
+          
           </div>
           <h3>{{ item.name }}</h3>
           <span>{{ item.job }}</span>

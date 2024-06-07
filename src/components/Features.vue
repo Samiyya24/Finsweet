@@ -54,9 +54,9 @@ const data = reactive([
         <div
           v-for="(product, index) in data"
           :key="index"
-          class="hover:shadow-[0px_0px_9px_0px_#bee3f8]"
+          
         >
-          <FeaturesCard :product="product" />
+          <FeaturesCard :product="product" class="hover:shadow-[0px_0px_9px_0px_#bee3f8] h-full"/>
         </div>
       </div>
     </div>

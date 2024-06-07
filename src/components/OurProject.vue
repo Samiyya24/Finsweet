@@ -8,7 +8,7 @@ import Projects from "./Projects.vue";
         View our projects
       </h2>
       <router-link
-        class="flex items-center gap-x-4 text-[#282938] font-medium cursor-pointer"
+        class="flex items-center gap-x-4 text-primary/50 hover:text-primary font-medium font-medium cursor-pointer"
         to="/pricing"
         >View More
         <svg

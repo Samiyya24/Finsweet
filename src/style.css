@@ -5,3 +5,11 @@
 *{
     font-family: 'Poppins';
 }
+
+input, textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
