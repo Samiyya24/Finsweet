@@ -3,7 +3,7 @@
   <footer class="bg-[#1C1E53] text-white py-24">
     <div class="container">
       <div class="lg:flex gap-40">
-        <div class="lg:max-w-[400px] max-md:mb-5">
+        <div class="lg:max-w-[400px] max-md:mb-5 md:mb-10">
           <img class="mb-6" src="/img/Logo.svg" alt="Logo" />
           <span class="text-[#F4F6FC]/80 max-md:text-sm"
             >We are always open to discuss your project and improve your online

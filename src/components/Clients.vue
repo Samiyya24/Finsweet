@@ -1,20 +1,20 @@
 <template>
-  <div class="container md:flex md:py-24 relative">
-    <div class="md:w-1/2">
-      <div class="gap-5 max-md:mx-12 my-12">
+  <div class="container lg:flex md:py-24 relative">
+    <div class="lg:w-1/2">
+      <div class="gap-5 max-md:mx-12 my-12 md:flex md:flex-col md:items-center">
         <h1
-          class="md:text-4xl text-xl max-w-[300px] max-md:mx-auto font-semibold max-md:text-center max-md:max-w-[200px]"
+          class="md:text-4xl text-xl ld:max-w-[300px] max-md:mx-auto font-semibold max-md:text-center max-md:max-w-[200px]"
         >
           What our clients say about us
         </h1>
         <p
-          class="text-[#282938] max-md:-ml-5 max-md:text-center text-sm md:max-w-[300px] w-72 py-4"
+          class="text-[#282938] max-md:-ml-5 max-md:text-center text-sm lg:max-w-[300px] max-md:w-72 py-4"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
         </p>
       </div>
     </div>
-    <div class="md:w-2/3 mt-8 md:mt-0">
+    <div class="lg:w-2/3 mt-8 md:mt-0">
       <div class="swiper-container overflow-hidden">
         <div class="swiper-wrapper">
           <div v-for="item in 3" :key="item" class="swiper-slide">
@@ -36,7 +36,9 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="flex gap-4 absolute md:right-24 right-5  md:bottom-28 bottom-8 z-10">
+    <div
+      class="flex gap-4 absolute md:right-24 right-5 md:bottom-28 bottom-8 z-10"
+    >
       <button
         @click="goToPrevSlide"
         class="rounded-full border md:py-5 px-2 bg-white border-[#1C1E53] my-8 md:px-5 py-2 hover:bg-[#1C1E53] hover:text-white text-[#1C1E53]"

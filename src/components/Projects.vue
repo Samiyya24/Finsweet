@@ -7,9 +7,11 @@
         class="absolute bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 w-1/2 md:-left-full h-full text-white md:group-hover:left-0 duration-1000"
       >
         <div class="flex flex-col gap">
-          <div class="max-md:hidden max-w-[400px] h-[400px]"></div>
+          <div
+            class="max-md:hidden lg:max-w-[400px] md:max-w-[100px] lg:h-[400px] md:h-[50px]"
+          ></div>
           <div class="max-w-1/2 text-left md:px-9 px-2">
-            <h3 class="md:text-2xl font-semibold mb-4">
+            <h3 class="lg:text-2xl font-semibold mb-4">
               Workhub office Webflow Webflow Design
             </h3>
             <p class="text-white/80 mb-10 max-md:text-xs">
@@ -39,12 +41,12 @@
     <div class="relative overflow-hidden group">
       <img class="w-full h-full" src="/img/img6.png" alt="" />
       <div
-        class="absolute px-14 bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 md:group-hover:w-full md:w-1/2 w-full -left-full h-full text-white group-hover:left-0 duration-1000"
+        class="absolute lg:px-14 md:px-5 bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 md:group-hover:w-full md:w-1/2 w-full -left-full h-full text-white group-hover:left-0 duration-1000"
       >
         <div class="flex flex-col">
-          <div class="w-60 md:h-32 h-20"></div>
+          <div class="w-60 lg:h-32 max-md:h-20 md:h-14"></div>
           <div>
-            <h3 class="text-2xl font-semibold mb-4 max-w-48">
+            <h3 class="lg:text-2xl max-md:text-2xl font-semibold mb-4 max-w-48">
               Unisaas Website Design
             </h3>
             <router-link
@@ -70,12 +72,12 @@
     <div class="relative overflow-hidden group">
       <img class="w-full h-full" src="/img/card3.png" alt="" />
       <div
-        class="absolute px-14 bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 group-hover:w-full w-1/2 -left-full h-full text-white group-hover:left-0 duration-1000"
+        class="absolute lg:px-14 md:px-5 bg-gradient-to-br from-[#1C1E536B]/40 to-[#1C1E53] top-0 group-hover:w-full w-1/2 -left-full h-full text-white group-hover:left-0 duration-1000"
       >
         <div class="flex flex-col">
-          <div class="w-60 md:h-40 h-20"></div>
+          <div class="w-60 lg:h-40 h-20"></div>
           <div>
-            <h3 class="text-2xl font-semibold mb-4 max-w-48">
+            <h3 class="lg:text-2xl font-semibold mb-4 max-w-48">
               Unisaas Website Design
             </h3>
             <router-link

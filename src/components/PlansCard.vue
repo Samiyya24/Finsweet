@@ -57,7 +57,7 @@ let hover = -1;
         help you bring your designs to life — without coding them.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
+    <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
       <div
         v-for="(plan, planIndex) in plans"
         :key="planIndex"

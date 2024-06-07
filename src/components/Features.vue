@@ -42,7 +42,7 @@ const data = reactive([
 </script>
 <template>
   <section class="bg-[#F4F6FC] md:py-32 py-5">
-    <div class="container text-center ">
+    <div class="container text-center">
       <p class="font-medium md:mb-3">Features</p>
       <h2
         class="md:text-5xl text-2xl font-semibold text-primary md:leading-[64px] max-w-[600px] mx-auto md:mb-12 mb-5"
@@ -50,7 +50,7 @@ const data = reactive([
         Design that solves problems, one product at a time
       </h2>
 
-      <div class="md:grid grid-cols-3 gap-8 flex flex-col">
+      <div class="md:grid lg:grid-cols-3 md:grid-cols-2 gap-8 flex flex-col">
         <div v-for="(product, index) in data" :key="index">
           <FeaturesCard :product="product" />
         </div>

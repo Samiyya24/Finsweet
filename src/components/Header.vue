@@ -5,17 +5,19 @@ import Navbar from "./Navbar.vue";
   <div class="bg-[#1C1E53]">
     <Navbar />
     <div
-      class="container pt-24 text-white md:flex max-md:text-center md:py-32  gap-x-16 justify-between"
+      class="container pt-24 text-white lg:flex max-md:text-center lg:py-32 gap-x-16 justify-between"
     >
-      <div class="max-md:mb-10">
-        <h1 class="md:text-[54px] max-md:text-3xl mb-6 max-w-lg font-semibold">
+      <div
+        class="max-lg:mb-10 md:text-center md:flex md:flex-col md:items-center justify-center"
+      >
+        <h1 class="lg:text-[54px] md:text-3xl max-md:text-3xl mb-6 max-w-lg font-semibold">
           Building stellar websites for early startups
         </h1>
         <p class="font-medium text-[#BBBBCB] mb-12 max-w-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
-        <div class="flex gap-x-10 max-md:justify-center items-center">
+        <div class="flex gap-x-10 max-lg:justify-center items-center">
           <router-link
             class="hover:bg-[#FCD980] border border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] md:py-4 py-2 md:px-14 px-5 rounded-full cursor-pointer"
             to="/works"

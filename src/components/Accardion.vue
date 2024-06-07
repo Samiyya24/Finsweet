@@ -1,5 +1,5 @@
 <template>
-  <div class="md:w-[1400px] pb-10">
+  <div class="lg:w-[1400px] pb-10">
     <div
       v-for="(data, index) in datas"
       :key="index"
