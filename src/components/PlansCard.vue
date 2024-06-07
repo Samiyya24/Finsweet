@@ -114,15 +114,17 @@ let hover = -1;
         <button
           :class="[
             'border py-4 px-16 rounded-full ',
-            planIndex == 2 ? 'mt-14 ' : 'mt-[86px]',
-            planIndex == 0 ? 'mt-[112px] ' : 'mt-20',
+            planIndex == 2 ? 'mt-14 ' : 'mt-[110px]',
+            planIndex == 0 ? 'mt-[135px] ' : 'mt-20',
 
             planIndex == 1
               ? 'text-[#FCD980] border-[#FCD980] hover:bg-[#FCD980] hover:text-primary'
               : 'border-primary hover:bg-primary hover:text-white',
           ]"
         >
-          {{ planIndex == 2 ? "Contact us" : "Get started" }}
+          <router-link to="/contact">
+            {{ planIndex == 2 ? "Contact us" : "Get started" }}
+          </router-link>
         </button>
         <div
           :class="
