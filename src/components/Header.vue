@@ -10,7 +10,9 @@ import Navbar from "./Navbar.vue";
       <div
         class="max-lg:mb-10 md:text-center md:flex md:flex-col md:items-center justify-center"
       >
-        <h1 class="lg:text-[54px] md:text-3xl max-md:text-3xl mb-6 max-w-lg font-semibold">
+        <h1
+          class="lg:text-[54px] md:text-3xl lg:leading-[60px] max-md:text-3xl mb-6 max-w-lg font-semibold"
+        >
           Building stellar websites for early startups
         </h1>
         <p class="font-medium text-[#BBBBCB] mb-12 max-w-lg">

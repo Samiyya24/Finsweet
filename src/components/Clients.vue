@@ -8,7 +8,7 @@
           What our clients say about us
         </h1>
         <p
-          class="text-[#282938] max-md:-ml-5 max-md:text-center text-sm lg:max-w-[300px] max-md:w-72 py-4"
+          class="text-[#282938] max-md:-ml-5 lg:-ml-36 max-md:text-center text-sm lg:max-w-[300px] max-md:w-72 py-4"
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
         </p>
