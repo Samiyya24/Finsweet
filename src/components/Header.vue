@@ -21,7 +21,7 @@ import Navbar from "./Navbar.vue";
         </p>
         <div class="flex gap-x-10 max-lg:justify-center items-center">
           <router-link
-            class="hover:bg-[#FCD980] border max-md:text-xs border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] md:py-4 py- md:px-14 px-5 rounded-full cursor-pointer"
+            class="hover:bg-[#FCD980] border max-md:text-xs border-[#FCD980] hover:text-[#1B1C2B] text-[#FCD980] md:py-4 py-2 md:px-14 px-5 rounded-full cursor-pointer"
             to="/works"
           >
             View our work</router-link
