@@ -8,7 +8,7 @@
       <p>Andrew Jonson</p>
       <span>Posted on 27th January 2021</span>
     </div>
-    <img class="md:mb-12 mb-5" src="/img/people2.png" alt="" />
+    <img class="md:mb-12 mb-5 w-full" src="/img/people2.png" alt="" />
     <p class="mb-4 text-primary/70 max-w-[750px] mx-auto max-md:text-sm">
       Apparently we had reached a great height in the atmosphere, for the sky
       was a dead black, and the stars had ceased to twinkle. By the same

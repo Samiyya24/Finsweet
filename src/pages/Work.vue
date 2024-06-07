@@ -66,7 +66,7 @@ function setFilter(button) {
 <template>
   <Navbar />
   <div class="bg-[#F4F6FC]">
-    <div class="container md:py-52 pt-32 pb-10 text-center">
+    <div class="container md:pt-40 md:pb-20 pt-32 pb-10 text-center">
       <span class="text-base text-primary/90 font-medium mb-1"
         >What we created</span
       >

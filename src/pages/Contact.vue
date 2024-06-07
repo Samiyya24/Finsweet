@@ -16,7 +16,7 @@ import Footer from "../components/Footer.vue";
 
   <section class="container">
     <form
-      class="bg-[#F4F6FC] md:py-14 py-5 md:px-16 px-2 max-w-[1000px] rounded-xl mx-auto mb-32"
+      class="bg-[#F4F6FC] md:py-14 py-5 md:px-16 px-2 max-w-[1000px] rounded-xl mx-auto mb-32 shadow-[0px_0px_9px_0px_#bee3f8]"
       action=""
     >
       <div class="grid md:grid-cols-2 gap-8 mb-4">

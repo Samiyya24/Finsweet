@@ -23,7 +23,7 @@ const link = (index) => {
   } else if (index === 4) {
     return "/blog";
   }
-  return "contact";
+  return "/contact";
 };
 
 const hamburger = () => {
@@ -43,7 +43,7 @@ const hamburger = () => {
     hamMenu.style.webkitBackdropFilter = "blur(30px)";
   }
 
-  if (hambur.style.right == "-100%") {
+  if (hambur.style.right === "-100%") {
     hambur.style.right = "0px";
     hamburger.style.display = "none";
     left.style.display = "block";
@@ -62,18 +62,19 @@ const hamburger = () => {
       class="container max-md:py-5 text-white flex md:py-[1%] w-full justify-between items-center"
     >
       <a href="#"><img class="w-[80%]" src="/img/Logo.svg" alt="LOGO" /></a>
-      <div class="flex gap-10 items-center">
+      <div class="flex md:gap-5 lg:gap-10 items-center">
         <router-link
           :to="link(index)"
+          active-class="active-link"
           class="hidden md:block anime cursor-pointer font-medium text-[16px]"
           v-for="(item, index) in menu"
           :key="index"
-          href="#"
           >{{ item }}</router-link
         >
         <router-link
           :to="link(5)"
-          class="border-white/20 hidden md:block hover:border-white border-2 py-4 px-12 rounded-full cursor-pointer"
+          class="border-white/20 hidden md:block hover:border-white border-2 lg:py-4 md:py-2 lg:px-12 md:px-8 rounded-full cursor-pointer"
+          active-class="active-link"
         >
           Contact us
         </router-link>
@@ -136,12 +137,12 @@ const hamburger = () => {
     class="w-[65%] flex -right-full duration-700 bg-[#1C1E53]/80 px-[10%] flex-col gap-6 py-[30%] h-screen items-start fixed z-30 shadow-2xl shadow-[#1C1E53]"
   >
     <router-link
+      active-class="active-link"
       @click="hamburger()"
       :to="link(index)"
       class="md:block hover-underline-animation phone font-medium text-xl py-1 first:pt-3"
       v-for="(item, index) in menu_hambur"
       :key="index"
-      href="#"
       >{{ item }}</router-link
     >
   </div>
@@ -225,5 +226,9 @@ const hamburger = () => {
 
 .anime:hover::before {
   transform: scaleX(1);
+}
+
+.active-link {
+  color: white !important;
 }
 </style>

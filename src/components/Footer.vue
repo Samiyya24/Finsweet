@@ -2,8 +2,8 @@
 <template>
   <footer class="bg-[#1C1E53] text-white py-24">
     <div class="container">
-      <div class="md:flex gap-40">
-        <div class="max-w-[400px] max-md:mb-5">
+      <div class="lg:flex gap-40">
+        <div class="lg:max-w-[400px] max-md:mb-5">
           <img class="mb-6" src="/img/Logo.svg" alt="Logo" />
           <span class="text-[#F4F6FC]/80 max-md:text-sm"
             >We are always open to discuss your project and improve your online
@@ -12,7 +12,7 @@
         </div>
         <div>
           <h2 class="md:text-5xl text-2xl font-semibold mb-4">Lets Talk!</h2>
-          <p class="text-[#F4F6FC]/80 max-w-[360px] mb-7 max-md:text-sm">
+          <p class="text-[#F4F6FC]/80 lg:max-w-[360px] mb-7 max-md:text-sm">
             We are always open to discuss your project, improve your online
             presence and help with your UX/UI design challenges.
           </p>
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div
-        class="md:flex bg-[#FCD980] md:w-1/3 md:py-7 py-2 text-primary gap-7 md:px-9 px-2"
+        class="flex bg-[#FCD980] lg:w-1/3 lg:py-7 py-2 mt-10 text-primary gap-7 lg:px-9 px-2"
       >
         <div class="flex flex-col">
           <span class="text-lg font-medium">Email me at</span>

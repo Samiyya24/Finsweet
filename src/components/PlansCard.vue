@@ -61,7 +61,7 @@ let hover = -1;
       <div
         v-for="(plan, planIndex) in plans"
         :key="planIndex"
-        class="py-16 px-12 rounded-xl relative"
+        class="py-16 px-12 text-center overflow-hidden rounded-xl relative"
         :class="[
           planIndex == 1
             ? 'bg-[#1C1E53] text-white'
@@ -78,10 +78,10 @@ let hover = -1;
             {{ plan.designType }}
           </span>
         </div>
-        <h3 class="text-xl font-medium mb-2">{{ plan.title }}</h3>
+        <h3 class="text-xl text-left font-medium mb-2">{{ plan.title }}</h3>
         <p
           :class="[
-            'mb-12',
+            'mb-12 text-left',
             planIndex == 1 ? 'text-[#a6a6a6]' : 'text-primary/70',
           ]"
         >
@@ -125,7 +125,7 @@ let hover = -1;
         <div
           :class="
             planIndex == 1
-              ? 'absolute md:w-[1100px] w-[700px] rounded-full md:h-[1100px] h-[700px] bg-white/10 md:bottom-44 md:-right-[330px] -right-[170px] max-md:-top-[100px]'
+              ? 'absolute md:w-[1100px] w-[700px] rounded-full md:h-[1100px] h-[700px] bg-white/5 md:bottom-44 md:-right-[330px] -right-[170px] max-md:-top-[100px]'
               : ''
           "
         ></div>
