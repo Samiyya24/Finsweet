@@ -11,7 +11,7 @@ import Footer from "../components/Footer.vue";
   <div class="container lg:flex items-start gap-20 md:text-center">
     <div class="max-md:text-center text-left max-md:mb-10 md:mb-10">
       <h3
-        class="lg:text-5xl text-4xl font-semibold mb-4 leading-[94px] text-primary"
+        class="lg:text-5xl text-4xl font-semibold mb-4 lg:leading-[94px] text-primary"
       >
         Frequently asked questions
       </h3>
